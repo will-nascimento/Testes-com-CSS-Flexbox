@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <style>
+
+        p{
+            border: rosybrown 2px solid;
+        }
+
+        .p2 {
+            margin-top: 320px;
+            margin-right: 200px;
+        }
+
+        button{
+           float: right;
+           border-radius: 5px;
+           background: steelblue;
+           box-shadow: 2px 2px 3px 1px grey;
+        }
+
+        a {
+            color: yellow;
+        }
+
+        .flex-container{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+        .flex-item {
+            background: blueviolet;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            color: blanchedalmond;
+            text-align: center;
+            margin: 5px;
+            list-style: none;
+         }
+        
+         .row {
+            flex-direction: row;
+         }
+
+         .row-reverse {
+             flex-direction: row-reverse;
+         }
+
+         .row-reverse li{
+            background: chocolate;
+         }
+
+         .column {
+            flex-direction: column;
+            float: left;
+         }
+
+         .column li {
+             background: cornflowerblue;
+         }
+
+         .column-reverse {
+            flex-direction: column-reverse;
+            float: right;
+         }
+
+         .column-reverse li {
+             background: rosybrown;
+         }
+    </style>
+</head>
+<body>
+<div>
+    <p>Olá, vamos demonstrar a seguir um pouco de conhecimento acerca de Flex Direction, uma ferramenta que deixa nosso código altamente responsivo, evitando assim transtornos ao usuário.</p>
+
+    <p>
+        Primeiramente exibição de Flex-item com rows e columns. 
+    </p>
+</div>
+<div>
+    <ul class="flex-container row">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container row-reverse">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+    
+    <ul class="flex-container column">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+    
+    <ul class="flex-container column-reverse">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+</div>
+<div>
+    <p class="p2">
+        A seguir, veremos Flex-wrap.       
+    </p>
+   
+    <button class="botao" href="/GitHub/CSS teste2.1.html" ><a href="/GitHub/CSS teste2.1.html">Clique aqui</a></button>
+</div>
+</body>
+</html>

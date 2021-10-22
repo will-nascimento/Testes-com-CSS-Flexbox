@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link'CSS teste21</title>
+    <style>
+        .btn {
+            margin-right: 10px;
+            float: left;
+            border-radius: 5px;
+            background: steelblue;
+            box-shadow: 2px 2px 3px 1px grey;
+        }
+
+        a {
+            color: yellow;
+        }
+        
+        
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid;
+            width: 300px;
+
+        }
+
+        .item {
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            line-height: 70px;
+        }
+        
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue{
+            background-color: rgba(30, 114, 209, 0.384);
+        }
+
+        .green{
+            background-color: rgb(0, 255, 157);
+        }
+
+        .orange{
+            background-color: rgb(255, 127, 80);
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="btn"><a href="/GitHub/CSS teste2.html"> HOME</a></button>
+    <p>
+        Vamos agora falar um pouco de Flex-Wrap:
+    </p>
+
+    <h1>
+        No-Wrap
+    </h1>
+
+    <div class="flex-container">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+    </div>
+    <p>A borda a seguir foi utilizada para demonstrar a limitação do Flex-container. Nesse exemplo acima, vemos o quanto está ajustada essa quantidade de itens, veremos como se comporta com mais itens a seguir:</p>
+
+    <div class="flex-container No-wrap">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+    </div>
+    <p>
+        Através da propriedade No-wrap os itens se distribuem uniformente através da mesma linha. Observação para a situação de a depender da quantidade de itens, a linha transborde o limite do Flex-container para prosseguir na mesma linha. 
+        Veremos a seguir como se comportam itens com a propriedade Wrap.  
+    </p>
+    <h1>
+        Wrap
+    </h1>
+    <div class="flex-container wrap">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">4</div>
+    </div>
+    <p>
+        Nesse caso, à medida que itens forem colocados dentro do container, haverá quebra de espaço e passarão para a próxima linha, exceto se tiver alguma limitação do container, como um espaço de height. A seguir uma demonstração de WRAP-REVERSE. 
+    </p>
+    <div class="flex-container wrap-reverse">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">4</div>
+    </div>
+    <p>
+        Continuamos com a mesma ideia, sendo que, caso a linha seja quebrada, ocorrerá para a anterior. 
+    </p>
+</body>
+</html>
